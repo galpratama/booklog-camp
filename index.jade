@@ -1,68 +1,29 @@
-!!! 5
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Booklog
-    link(rel='stylesheet', href='public/vendor/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='public/css/style.css')
-  body
-    .navbar.navbar-inverse.navbar-fixed-top
-      .container
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#') Booklog
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='#') About
-            li
-              a(href='#about') Product
-            li
-              a(href='#contact') Contact
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown')
-                | Dropdown
-                b.caret
-              ul.dropdown-menu
-                li
-                  a(href='#') Action
-                li
-                  a(href='#') Another action
-                li
-                  a(href='#') Something else here
-                li.divider
-                li.dropdown-header Nav header
-                li
-                  a(href='#') Separated link
-                li
-                  a(href='#') One more separated link
-        //
-          /.navbar-collapse 
-    .container
-      //
-         Example row of columns 
-      .row
-        .col-lg-8
-          h3 Heading
-          hr
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .col-lg-4
-          ul.nav.nav-pills.nav-stacked
-            li.active
-              a(href='#') Home
-            li
-              a(href='#') Profile
-            li
-              a(href='#') Messages
-    script(src='public/vendor/bootstrap/query/jquery-2.0.3.min.js')
-    script(src='public/vendor/bootstrap/dist/js/bootstrap.min.js')
+extends layout
+
+block head
+  title Booklog
+
+block neck
+  link(rel="stylesheet", type="text/css", href="public/css/style.css")
+
+block konten
+  .container
+        .row
+          .col-lg-8
+            h3 Headings
+            hr
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-lg-4
+            ul.nav.nav-pills.nav-stacked
+              li.active
+                a(href='#') Home
+              li
+                a(href='#') Profile
+              li
+                a(href='#') Messages
